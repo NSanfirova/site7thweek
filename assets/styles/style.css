@@ -73,7 +73,7 @@ a {
     grid-template-rows: 100px 1fr 100px 100px;
     grid-template-columns: repeat(2, 50%);
     margin: 0 auto;
-    background: url(/assets/images/leftpic.png) no-repeat, url(/assets/images/rightpic.png) no-repeat;
+    background: url(assets/images/leftpic.png) no-repeat, url(assets/images/rightpic.png) no-repeat;
     background-position: left bottom, right top;
     background-size: 30% 40%
 }
