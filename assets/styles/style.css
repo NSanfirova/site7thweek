@@ -1,19 +1,17 @@
-body {
-    max-width: 1400px;
-    margin: 0 auto;
-}
 
 .container {
     min-height: 100%;
     max-width: 1400px;
-    min-width: 1024px;
     display: grid;
     grid-template: minmax(150px, auto) 1fr minmax(200px, auto) / 1fr;
     grid-template-areas:
         "header"
         "main"
         "footer";
+        justify-items: center;
     background-color: black;
+    margin: 0 auto;
+
 
 }
 
@@ -73,7 +71,7 @@ a {
     grid-template-rows: 100px 1fr 100px 100px;
     grid-template-columns: repeat(2, 50%);
     margin: 0 auto;
-    background: url(assets/images/leftpic.png) no-repeat, url(assets/images/rightpic.png) no-repeat;
+    background: url(../images/leftpic.png) no-repeat, url(../images/rightpic.png) no-repeat;
     background-position: left bottom, right top;
     background-size: 30% 40%
 }
@@ -113,7 +111,7 @@ a {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: 700;
-    font-size: 20em;
+    font-size: 18em;
     line-height: 230px;
     text-align: center;
     padding-left: 30px;
@@ -420,6 +418,26 @@ a {
     }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .imgburger {
+        display: none;
+    }
+
+    body {
+        background-color: #000;
+    }
+
+    .container {
+        background-color: #000;
+    }
+
+    .content_title {
+        font-size: 150px;
+        line-height: 180px;
+        text-align: center;
+    }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1023px) {
     .content {
         display: grid;
@@ -430,6 +448,10 @@ a {
         background-position: left 15px bottom 15px;
         background-size: 35% 55%;
         background-color: rgb(160, 20, 20);
+    }
+
+    body {
+        background-color: #000;
     }
 
     .content_title {
@@ -466,7 +488,6 @@ a {
         display: grid;
         height: 500px;
         max-width: 768px;
-        min-width: 350px;
         background: url() no-repeat;
         background-color: rgb(14, 14, 32);
     }
